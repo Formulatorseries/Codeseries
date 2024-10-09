@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+	
+<meta charset="utf-8">
+<title>REGISTRATION FORM</title>
+	<hr/>
+	<style>
+		body{
+			background-image:linear-gradient( to right,lightblue,red,lightblue);
+			align-content: center;
+			align-items: center;
+			text-align: center;
+			color:black;
+			display: flex;
+			display: block;
+			margin: 150px;
+			cursor: crosshair;
+			
+		}
+		h1{
+			color: lime;
+			text-transform: capitalize;
+			text-decoration: overline;
+		}
+		button{
+			color:goldenrod;
+			background-color: black;
+			border-radius:50px;
+		}
+	</style>
+</head>
+
+<body>
+	<form name=" STUDENT REGISTRATION FORM" method="get">
+	<fieldset>
+	<h1>STUDENT REGISTRATION</h1>
+	<br/>
+	<hr/>
+	<p>PERSONAL INFORMATION SECTION</p>
+		<hr/>
+	
+	<br/>
+	<lable for="FIRST NAME" name="FIRST NAME" >FIRST NAME</lable>
+	<input type="text" name="text" required="required">
+	<br/>
+	<br/>
+	<lable for="MIDDLE NAME" name="MIDDLE NAME" >MIDDLE NAME</lable>
+	<input type="text" name="text" required="required">
+	<br/>
+	<br/>
+	<lable for="LAST NAME" name="LAST NAME" >LAST NAME</lable>
+	<input type="text" name="text" required="required">
+		<br/> <br/>
+		<lable for="date of birth" name="DOB">DOB</lable>
+		<input type="date" name="DOB">
+	</fieldset>
+		<br/>
+		<br/>
+	<fieldset>
+		<p>CONTACT DETAILS SECTION</p>
+		<hr/>
+		<br/>
+		<lable for=" NATIONAL ID NUMBER" name="national id number">NATIONAL NUMBER</lable>
+		<input type="number" name="national id " required="required">
+		<br/>
+		<br/>
+		<lable for="PHONE CONTACT" name="PHONE CONTACT" >PHONE CONTACT</lable>
+		<input type="tel" name="tel no" required="required">
+		<br/>
+		<br/>
+		<lable for="EMAIL" name="EMAIL" >EMAIL</lable>
+		<input type="email" name="EMAIL" required="required">
+		<br/><br/>
+		<address>760  Evergreen terrace,springfield</address>
+		</fieldset>
+		<fieldset>
+	<p>ADDITONAL INFORMATION </p>
+			<hr/>
+	<br/>
+		<p>please select the course you want to undertake</p>
+	  <select name="COURSES" >
+<option value="INFORMATION TECHNOLOGY" >INFORMATION TECHNOLOGY</option>
+<option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+<option value="COMPUTER TECHNOLOGY" >COMPUTER TECHNOLOGY</option>
+<option value="INFORMATION AND COMMUNICATON MANAGEMENT">INFORMATION AND COMMUNICATON TECHNOLOGY MANAGEMENT</option>
+</select>
+		
+
+		<br/>
+		<p> which field do you want to pursue after you attain your degree</p>
+		<select name="FIELD">
+			<option value="CYBER SECURITY">CYBER SECURITY</option>
+			<option value="SOFTWARE ENGINEERING">SOFTWARE ENGINEERING</option>
+			<option value="NETWORKING">NETWOKRING</option>
+			<option value="PROGRAMMING">PROGRAMMING</option>
+			<option value="COMPUTER ENGINEERING">COMPUTER ENGINEERING</option>
+			
+		 </select>
+		 <p>how would like to rate our to rate the nature of courses we offer based on public view or from your own experience</p>
+		<input type="checkbox" name="checkbox" value="FAIR">FAIR
+		<input type="checkbox" name="checkbox" value="GOOD">GOOD
+		<input type="checkbox" name="checkbox" value="VERYGOOD">VERYGOOD
+		<input type="checkbox" name="checkbox" value="EXELLENT">EXELLENT
+		<br/>
+		<br/>
+		<textarea cols="50" rows="5">ENTER YOUR COMMENTS </textarea>
+		<br/><br/>
+		<p>attach any certificates earned though coding of any projects</p>
+		<input type="file" name="biography" value="biography">
+		
+		<input type="submit" name="upload" value="upload">
+		<br/>
+		<br/>
+		<button type="submit" name="submit" value="submit">SUBMIT</button>
+	</fieldset>
+		
+		
+		</form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+	
+</body>
+</html>

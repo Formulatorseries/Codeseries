@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>practical forms</title>
+	<style>
+		
+		
+		body{
+			background-color: lawngreen;
+			
+			color: black;
+			font-weight: 900px;
+			/*background-image: radial-gradient(black,yellow,black);*/
+			
+		}
+		.details{
+			
+			margin-left: 50px;
+		}
+		button{
+			border-radius: 18px;
+		}
+		.can{
+			background-color: aqua;
+			scroll-behavior: smooth;
+			
+			
+		}
+		
+	</style>
+</head>
+
+<body>
+	<form>
+	<h1>"Pimp My Shoes" Contest Entry Form</h1>
+	<p>Want to trade in your old sneakers for a custom pair of Forcefields?Make a case for why your shoes have<i> got</i> to go and you may be one<br/>of ten lucky winners.</p>
+	<br/>
+	<p>Contest Entry Information</p>
+		<section class="details">
+		<br/>
+			<lable for="name"><b>Name:</b></lable>
+		<input type="text" name="text">
+		<br/>
+			<lable for="email" name="email"><b>Email Address:</b></lable>
+		<input type="email" name="email.">
+		<br/>
+			<lable for="tel" name="tel"><b>Telephone Number:</b></lable>
+		<input type="tel" name="tel">
+		
+			<p><b>My shoes are SO old...</b></p>
+		<textarea value="No more than 300 characters long" cols="100" rows="3">No more than 300 characters long</textarea>
+		<br/>
+		<br/>
+			</section>
+		<h2>Design Your Custom Forcefields:</h2>
+		<br/>
+		<fieldset>
+			<legend>Custom Shoe Design</legend>
+			<fieldset>
+				<legend>Color(<i>choose one</i>)</legend>
+			<input type="radio" name="radio" value="Red">Red
+			<br/>
+			<input type="radio" name="radio" value="Red">Blue
+			<br/>
+			<input type="radio" name="radio" value="Red">Black
+			<br/>
+			<input type="radio" name="radio" value="Red">Silver
+			</fieldset>
+			<br/>
+			<br/>
+			<fieldset>
+				<legend>Features (<i>choose as many as you want</i>)</legend>
+				<input type="checkbox" name="features" >Sparley laces
+				<br/>
+				<input type="checkbox" name="features" checked="checked">Metallic logo
+				<br/>
+				<input type="checkbox" name="features" >Light-up heels
+				<br/>
+				<input type="checkbox" name="features" >MP3-enebled
+			</fieldset>
+			<fieldset>
+				<legend>Size</legend>
+				<label for="sizes">Sizes reflect standard men sizes:</label>
+				<input type="number" min="5" max="11" placeholder="5">
+			</fieldset>
+		</fieldset>
+		<br/>
+		<br/>
+		<button type="submit">Pimp My Shoes!</button>
+		<button type="reset">Reset</button>
+		
+		
+</form>
+</body>
+</html>

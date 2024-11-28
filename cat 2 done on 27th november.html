@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat 2</title>
+</head>
+<style>
+    body{
+        
+        
+        width: 65em;
+        margin: auto;
+        margin-top: 2em;
+        font-size: medium;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-right: 20%;
+        margin-left: 20%;
+
+    }
+    
+
+    
+    h1{
+   
+    color: black ;
+    margin-inline-start: 12em;
+    font-size: x-large;
+    padding-bottom: 0.3em;
+    padding-top: 1.5em;
+    
+    }
+    .input-error {
+            border: 2px solid red;         
+                outline: none; 
+        }
+        form{
+          
+          padding-bottom: 1.5em;
+          padding-top: 0.5;
+          margin:auto;
+          margin-inline-start: 0.2em;
+          margin-inline-end: auto;
+          font-size: large;
+          
+          
+          
+          
+
+
+        
+          
+        }
+      
+      .submit{
+        margin-inline-start: 13em;
+       margin-top: 1em;
+    
+        
+      }
+      label {
+        margin-top: 0.5em;
+        width: 180px;
+        text-align: left;
+        display: inline-block;
+      }
+      input {
+    margin: 0.1em 0; 
+    padding: 0.1em;  
+    width: 23%; 
+    box-sizing: border-box;
+      }
+
+
+</style>
+<body>
+    <h1>Register Account</h1>
+    
+    <form id="registrationForm" onsubmit="return validateForm()" >
+        
+                 <label for="Full name">Full Name: </label>
+            <input type="text" id="name" name="name" placeholder="as" maxlength="30">
+            <span class="error-message" style="color:red; display:yes ;">Username must be atleast 4 characters</span><br>
+        
+
+        <label for="Password">Password :</label>
+        <input type="text" id="password" name=" pass" maxlength="30"placeholder=".." required>
+        <span class="error-message" style="color:red; display:yes ;">Password must be at least 4 characters</span><br>
+
+        <label for="Confirm password">Confirm password:</label>
+        <input type="text" id="confirm pass" name="confirmpassword" maxlength="30" placeholder="...."required>
+        <span class="error-message" style="color:red; display: yes;">Passwords do not match</span><br>
+    
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="confirm pass" maxlength="30"placeholder="john@gmail" required>
+        <span class="error-message" style="color:red; display: yes;">Invalid email format</span><br>
+        <span style="margin-inline-start: 10.2em;">Format:john@gmail.com</span>   <br>
+        
+
+            <label for="email">Phone Number:</label>
+           
+            <input type="text" id="number" name="number" maxlength="30"placeholder="11111111111" required>
+            <span class="error-message" style="color:red; display: yes;">Invalid Phone number</span><br>
+            <span style="margin-inline-start: 10.2em;">Format:0xxx-xxx-xxx</span> <br>
+            
+
+                <label for="email">Zip Code:</label>
+                <input type="text" id="code" name="zip" maxlength="30"placeholder="111111111111111" required>
+                <span  class="error-message" style="color:red; display: yes;">Invalid Zip Code</span><br>
+                <span style="margin-inline-start: 10.2em;">Format:Use 5 or 9 digits Zip code</span>  <br>
+                
+
+                    <label for="email">Card Type:</label>
+                    <select name="card" id="cardt" class="cardtype">
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Barclays">Barclays</option>
+                    </select><br>
+                   
+                    
+                    <label for="cnumber">Card Number:</label>
+                <input type="text" id="cnumber" name="Cardnumber" maxlength="30"placeholder="111111111111111" required>
+                <span class="error-message" style="color:red; display: yes;">Invalid Card Number format</span><br>
+                <span style="margin-inline-start: 10.2em;">Format: 1111-2222-3333-4444</span> <br>
+
+                    <label for="Expiration date">Expiration date:</label>
+                <input type="text" id="date" name="expiration" maxlength="30"placeholder="111111111111111" required>
+                <span class="error-message" style="color:red; display: yes;">Invalid date format</span><br>
+                <span style="margin-inline-start: 10.2em;">Format:YYYY-MM-DD </span>  <br>
+                
+        <button class="submit">Register</button>
+        <button class="submit">Clear Form</button>
+    </form>
+</body>
+<script>
+    function validateForm() {
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        const errorMessage = document.getElementById('error-message');
+
+        // Clear previous error message
+        errorMessage.textContent = '';
+
+        // Check if passwords match
+        if (password !== confirmPassword) {
+            errorMessage.textContent = 'Passwords do not match.';
+            return false; // Prevent form submission
+        }
+
+        return true; // Allow form submission
+    }
+
+    function validateForm() {
+        const email = document.getElementById('email').value;
+        
+        const errorMessage = document.getElementById('error-message');
+
+        // Clear previous error message
+        errorMessage.textContent = '';
+
+        // Check if passwords match
+        if (email !== email) {
+            errorMessage.textContent = 'invalid email format.';
+            return false; // Prevent form submission
+        }
+
+        return true; // Allow form submission
+    }
+   
+</script>
+</html>
